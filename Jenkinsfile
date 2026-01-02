@@ -10,5 +10,11 @@ pipeline{
                 echo 'Hello My Java App'
             }
         }
+        stage('Cloning the repo'){
+            steps{
+                git 'https://github.com/shohail-Dev/spring-boot-hello-world.git
+'
+            }
+        }
     }
 }
