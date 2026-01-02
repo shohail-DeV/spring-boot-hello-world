@@ -12,8 +12,7 @@ pipeline{
         }
         stage('Cloning the repo'){
             steps{
-                git 'https://github.com/shohail-Dev/spring-boot-hello-world.git
-'
+                git 'https://github.com/shohail-Dev/spring-boot-hello-world.git'
             }
         }
     }
