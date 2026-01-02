@@ -20,5 +20,10 @@ pipeline{
                 bat 'mvn clean'
             }
         }
+        stage('Artifact'){
+            steps{
+                bat 'mvn clean install'
+            }
+        }
     }
 }
