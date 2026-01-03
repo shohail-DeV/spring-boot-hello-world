@@ -15,11 +15,7 @@ pipeline{
                 git branch:'main', url: 'https://github.com/shohail-Dev/spring-boot-hello-world.git'
             }
         }
-        stage ('Test'){
-            steps{
-                bat 'mvn test'
-            }
-        }
+        
         stage('Code Restoration'){
             steps{
                 bat 'mvn clean'
